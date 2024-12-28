@@ -1,0 +1,19 @@
+get http://localhost:3000
+
+### speaker
+get http://localhost:3000/speakers
+###
+get http://localhost:3000/speakers/vincent
+
+### feedback
+get http://localhost:3000/feedback
+### POST 请求示例
+POST http://localhost:3000/feedback/api
+Content-Type: application/json
+
+{
+    "name": "vincent",
+    "email": "vincent@abc.com",
+    "title": "this is a title",
+    "message": "this is a message"
+}
